@@ -4,7 +4,6 @@ Allen Proxmire
 
 
 ---
-
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
 1. **The 13 substrate primitives are not derived** (position paper, Paper_087).
@@ -89,7 +88,7 @@ Before any comparison to charge, the question is what topological invariants the
 
 ### 4.1 Quantize — an integer winding, conserved and protected
 
-On a minimal U(1)-on-a-cycle arena, single-valued committed polarity (P09 angle made single-valued by P11 commitment) forces the holonomy around the cycle to an **integer winding `w ∈ ℤ`** — exactly `π₁(U(1)) = ℤ`, confirmed to machine precision. The winding is **conserved**: it cannot change continuously, and changing it discretely would require "uncommitting" a polarity, which **P11 irreversibility forbids**. So the winding is a quantized, conserved, **irreversibility-protected** topological invariant — the first and most charge-like feature. It is, however, **inert** at the Σ level: orientation-blind Σ never reads the phase, so the winding has no direct dynamical effect.
+On a minimal U(1)-on-a-cycle arena, single-valued committed polarity (P09 angle made single-valued by P11 commitment) forces the holonomy around the cycle to an **integer winding `w ∈ ℤ`** — exactly `π₁(U(1)) = ℤ`, confirmed to machine precision. The winding is **conserved**: it cannot change continuously, and changing it discretely would require "uncommitting" a polarity, which **P11 irreversibility forbids**. So the winding is a quantized, conserved, **irreversibility-protected** topological invariant — the first and most charge-like feature. *(**Scope note added 2026-09-12.** This is the claim that `w` cannot **change** while its cycle exists, established on fixed ring arenas. It is not the claim that the cycle itself persists. The winding is the holonomy of a loop of **live participations** — P02 makes participation the time-indexed four-tuple `(C, K, u, t)`, and P09 hangs polarity on each channel-locus participation — so where participation ceases there is no phase to difference and the invariant has no carrier, with nothing uncommitted and P11 respected. Load-bearing downstream: `Paper_ED_CCC` §3.6.1 uses exactly this to clear residual charge at the contrast-zero limit. A dissolving-arena test is not runnable on the certified engine, which enforces monotone commitment with no release channel.)* It is, however, **inert** at the Σ level: orientation-blind Σ never reads the phase, so the winding has no direct dynamical effect.
 
 ### 4.2 Couple — weakly, through bandwidth
 

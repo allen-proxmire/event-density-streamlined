@@ -21,6 +21,13 @@ Fourteen papers carry sixteen results, because GR-II carries three.
 | BH_Rindler_Cosmological_Acoustic Horizons as One Substrate Object | four kinds of horizon, one law |
 | Inflationary Spectrum | primordial tensor modes |
 
+## Keeping them current
+
+These are copies. The canonical papers live in the `ED Generative` corpus and change there; a copy left alone goes stale without saying so. Copies verified against canon **2026-09-12**.
+
+    python tools/check_paper_sync.py            # report drift
+    python tools/check_paper_sync.py --apply    # refresh, keeping each local title block
+
 ## Reading them
 
 Each paper opens with a preamble stating what it does **not** claim, written before the rest of the paper. That is the fastest way to see the shape of a result, and it is where the borrowing is admitted.

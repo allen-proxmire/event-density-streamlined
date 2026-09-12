@@ -13,7 +13,7 @@
 |---|---|---|
 | P09 | polarity is a U(1) angle | the angle that does the winding |
 | P05 | polarity transport | the discrete connection the winding is measured along |
-| P11 | commitment is irreversible | the protection. Changing the winding would mean uncommitting a polarity |
+| P11 | commitment is irreversible | the protection. Changing the winding would mean uncommitting a polarity. This protects the number while its loop exists; it does not make the loop permanent |
 | P04 | bandwidth | the weak channel through which the winding couples to anything |
 
 ## What it borrows from standard physics
@@ -30,6 +30,7 @@ Ask first what topological quantity the participation graph admits at all, witho
 
 - **The field is withheld.** At the discrete layer ED gets the integral Gauss law but not a determined local inverse-square field. The paper's own fork says you can have that field only by giving up either orientation-blindness or the arrow, which means leaving ED.
 - The winding is inert: it couples weakly and does not drive the stability landscape.
+- **What is protected, and what is not** (scope added 2026-09-12). The integer cannot change while the loop that carries it exists. The loop is not itself protected: it is made of live participations, and where participation ceases there is no phase to difference and the number has nothing to be a property of, with nothing uncommitted. `Paper_ED_CCC` §3.6.1 turns on exactly this, using it to clear residual charge at the end of a cosmic aeon. The consequence is worth saying plainly: in this account charge is a property of a live loop around a thing, not of the thing alone.
 - The quantization and the loop-independence were confirmed in the certified simulator to machine precision. The argument is structural; the simulation checks it.
 - The paper is strict that no charge spectrum was fitted. Reproducing the familiar ±1 and ∓⅓ pattern by fitting a topology to those values would violate its own discipline, and is not claimed.
 
