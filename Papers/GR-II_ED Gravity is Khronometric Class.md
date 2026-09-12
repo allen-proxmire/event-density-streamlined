@@ -10,6 +10,7 @@ Allen Proxmire
 > - **No ED field equation for the metric exists to apply Lovelock's theorem to.** The only dynamics ED actually builds (GR-III) is a single scalar diffusion equation, $\dot b = D\nabla^2 b - \kappa\rho$. It has no propagating waves and no tensor modes.
 > - **The class and its consequences are assumed, not derived.** "2 tensor + 1 scalar", $c_T = c$ and universal Lorentz violation follow *if* ED is assumed to be a metric theory with a preferred foliation and one light cone. That is the khronometric class taken as given, not a result derived from ED's dynamics.
 > - **Two inputs are asserted.** §3.1's claim that the bandwidth current is covariantly conserved "by dual-flux typing", and §3.3's "discrete Fermat principle", are asserted rather than shown. §3.2's step from dust conservation to geodesic motion is the standard identity.
+> - **Preamble items 5 and 6 and the §8 forward note say GR-III and GR-IV close the preferred-frame front favorably. That is withdrawn:** see the review notes on GR-III and GR-IV.
 
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 

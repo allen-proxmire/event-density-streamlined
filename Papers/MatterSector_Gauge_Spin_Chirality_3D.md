@@ -7,7 +7,7 @@ Allen Proxmire
 
 > **Review note (2026-09-12).** Apart from one corrected group identity in the abstract (noted below), the text is the corpus copy. These corrections come from a review of this repository and take precedence over it.
 >
-> - **Corrected here:** the abstract read $U(N) = SU(N)\times U(1)$. The correct identity is $U(N) = (SU(N)\times U(1))/\mathbb Z_N$, as §2 already has. *The canonical corpus copy still needs this fix, or `check_paper_sync.py --apply` will restore the error.*
+> - **Corrected here:** the abstract read $U(N) = SU(N)\times U(1)$. The correct identity is $U(N) = (SU(N)\times U(1))/\mathbb Z_N$, as §2 already has. The same fix was made in the canonical corpus copy.
 > - **§5's "ED predicts no parity-violating abelian force" is contradicted by the Standard Model.** Hypercharge $U(1)_Y$ is abelian and chiral: left- and right-handed fermions carry different hypercharge. This falsifier is already met.
 > - **Channel multiplicities {1, 2, 3} give $U(1)\times U(2)\times U(3)$, which has three abelian factors.** The Standard Model group, $(SU(3)\times SU(2)\times U(1))/\mathbb Z_6$, has one. The correspondence in §2 does not hold as stated.
 > - **§2 is textbook.** The structure group of norm-preserving transport on $\mathbb C^N$ is $U(N)$.

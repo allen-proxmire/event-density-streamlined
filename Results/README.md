@@ -52,9 +52,9 @@ The list is still worth having, because it makes this visible. Every borrowing w
 - **ED's only built dynamics is one scalar.** It is a diffusion equation. Tensor modes and waves at c are written in by hand, not derived.
 - **GR-III and GR-IV contradict each other on the scalar mode's speed.** GR-III's argument for c_s = c does not survive the standard formula GR-IV relies on.
 - **GR-IV's tiny couplings run into strong coupling.** At λ ∼ 10⁻⁹³, the literature's strong-coupling scale is near 4×10⁻¹⁹ eV.
+- **The lapse rests on a band-accounting premise that is argued, not closed.**
 
 The definite calculations behind these points can be re-run with `python tools/run_checks.py` (see the [main README](../README.md#calculations-anyone-can-run)).
-- **The lapse rests on a band-accounting premise that is argued, not closed.**
 
 ## What holds up
 

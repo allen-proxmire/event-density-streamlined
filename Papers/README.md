@@ -9,7 +9,7 @@ Each paper opens with a **review note (2026-09-12)** above its first section. Th
 Two more things to keep in mind when reading:
 
 - **The audit labels overstate.** Tier labels in the papers' own audit tables ("D", "D-via-I", "form-FORCED", "M1/M3") often mark a known result restated in ED terms rather than a derivation. Read the review note before trusting a tier.
-- **One paper's body has been changed.** MatterSector's abstract carried a wrong group identity. It was corrected here, and its review note says so.
+- **One paper's body has been changed.** MatterSector's abstract carried a wrong group identity. It was corrected here and in the canonical corpus, and its review note says so.
 
 Fourteen papers carry the sixteen results, because GR-II carries three.
 
@@ -37,12 +37,9 @@ These are copies. The canonical papers live in the `ED Generative` corpus and ch
     python tools/check_paper_sync.py            # report drift
     python tools/check_paper_sync.py --apply    # refresh, keeping each local title block
 
-**`--apply` keeps the review notes and loses one local fix:**
+**`--apply` keeps the review notes.** Each note sits in the local title block, which `--apply` preserves.
 
-- **Review notes survive.** Each note sits in the local title block, which `--apply` preserves.
-- **The MatterSector fix does not.** It is in the paper body, so `--apply` would restore the error until the canonical paper is fixed too. Until then `check_paper_sync.py` will report that one file as drifted, which is expected.
-
-The problems recorded in the review notes also exist in the canonical papers and should be fixed there.
+The canonical papers in ED Generative carry the same review notes and the same MatterSector fix (2026-09-12), so all 18 copies match. Other ED Generative files that repeat the reviewed claims are listed in that repository's `REVIEW_2026-09-12.md`.
 
 ## Upstream
 

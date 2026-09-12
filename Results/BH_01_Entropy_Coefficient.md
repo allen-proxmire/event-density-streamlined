@@ -10,7 +10,7 @@
 ## What review found
 
 - **The algebra is correct, and it is the standard Gibbons–Hawking calculation:** continue to imaginary time, require no conical defect, read off T = κ/2π, integrate the first law.
-- **S = A/4 needs two things GR-I does not derive:** r_s = 2GM exactly, and A = 4πr_s². With r_s = kGM the first law gives S = A/(2k), so the 1/4 requires k = 2. That 2 comes from GR-I's identification b ∼ 1 + 2Φ, which matches the metric to Newtonian gravity; it is not derived. Together they are the Schwarzschild metric in areal-radius coordinates. GR-I builds its metric in isotropic form, g_ij = b⁻¹δ_ij. In that form the horizon area r²/b diverges at b = 0, and the second-order metric gives PPN β = 0, which observation excludes. The switch to the areal form is not justified.
+- **S = A/4 needs two things GR-I does not derive:** r_s = 2GM exactly, and A = 4πr_s². Together they are the Schwarzschild metric in areal-radius coordinates. With r_s = kGM the first law gives S = A/(2k), so the 1/4 requires k = 2; that 2 comes from GR-I's identification b ∼ 1 + 2Φ, which matches the metric to Newtonian gravity rather than deriving it. GR-I builds its metric in isotropic form, g_ij = b⁻¹δ_ij. In that form the horizon area r²/b diverges at b = 0, and the second-order metric gives PPN β = 0, which observation excludes. The switch to the areal form is not justified.
 - **A statement on this page was wrong.** It said the exact horizon radius did not matter because a horizon forming at all "is all this derivation needs". The coefficient depends directly on that radius.
 - **Net:** ED reproduces GR's 1/4 by adopting GR's metric. It gives no independent derivation.
 

@@ -10,12 +10,13 @@ Allen Proxmire
 
 > **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
 >
-> - **The rule is scalar diffusion.** The built and simulated rule, $\dot b = D\nabla^2 b - \kappa\rho$, is first-order in time and has no waves: a disturbance $e^{i(kx-\omega t)}$ gives $\omega = -iDk^2$, which decays without travelling.
-> - **The mass-scaling result (§7.2) was guaranteed by linearity.** The steady state is linear in $\rho$, so "$r_s \propto M$" holds before any simulation runs. The "hyperbolic sector" in §6–§7 is written in by hand ($\ddot h_{ij} = c^2\nabla^2 h_{ij} + \ldots$). The tensor field $h_{ij}$ is never built from $b$, and the mode count in §7.5 is not read off the built rule.
+> - **The rule is scalar diffusion.** The built and simulated rule, $\dot b = D\nabla^2 b - \kappa\rho$, is first-order in time and has no waves: a disturbance $e^{i(kx-\omega t)}$ gives $\omega = -iDk^2$, which decays without travelling. The "hyperbolic sector" in §6–§7 is written in by hand ($\ddot h_{ij} = c^2\nabla^2 h_{ij} + \ldots$). The tensor field $h_{ij}$ is never built from $b$, and the mode count in §7.5 is not read off the built rule.
+> - **The mass-scaling result (§7.2) was guaranteed by linearity.** The steady state is linear in $\rho$, so "$r_s \propto M$" holds before any simulation runs.
 > - **The khronon-speed argument (§6) conflicts with GR-IV.** Here $c_s = c$ follows from the *absence* of a $\lambda\theta^2$ term. In the standard khronometric parametrization that GR-IV uses, $\beta = 0$ gives $c_s^2 = \lambda(2-\alpha)/[\alpha(2+3\lambda)]$. With $\lambda = 0$ that is $c_s = 0$, not $c$, and $c_s = c$ requires the tuning $\alpha = \lambda/(1+2\lambda)$ with $\lambda \neq 0$. So $c_s = c$ is not established.
 > - **The "emergent horizon" (§7.3) is the clip.** It is where the linear steady-state profile would go negative and is clipped at $b = 0$, not a strong-field result. Its radius tracks mass because the solution is linear.
 > - **The area law (§7.4) is geometry.** The count of edges cut by a compact region's boundary scales with its surface for any region. That is not evidence of holography.
 > - **Horizon thermodynamics (§8) need the areal Schwarzschild form of the metric**, which GR-I does not derive (see the review note on GR-I).
+> - **Where this paper says GR-IV closes the α₁, α₂ front favorably (preamble item 8, §9, §11.5, and any cross-reference note), that is withdrawn.** α₂ = 0 rests on an underived tuning and the α₁ suppression on a dimensional estimate; see the review note on GR-IV.
 
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
