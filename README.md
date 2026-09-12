@@ -10,6 +10,8 @@ It holds three things.
 
 **[Papers/](Papers/)** — the papers behind those results, plus the four upstream papers they depend on.
 
+**[ED_Streamlined_Theory.xlsx](ED_Streamlined_Theory.xlsx)** — the same material as a workbook: the foundation, the results, a map of which result uses which assumption, and what was left out. It is generated from the markdown by [tools/build_workbook.py](tools/build_workbook.py), not maintained by hand, so the two cannot drift apart. Edit the markdown and re-run `python tools/build_workbook.py` to rebuild it.
+
 ## The rule
 
 Everything here traces back to Foundation.md. A result that needs an assumption not on that page does not belong on this list, however good the result is.
