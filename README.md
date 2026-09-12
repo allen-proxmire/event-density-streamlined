@@ -18,14 +18,7 @@ Everything here traces back to Foundation.md. A result that needs an assumption 
 
 ## What is deliberately absent
 
-The full corpus is roughly 280 papers. Most of its results hold *given a further local assumption* — around 130 of them. Those are real work and they are honestly labelled in the main repository, but they are not on this list, because this list answers a narrower question: what follows from the starting page alone.
+The full corpus is roughly 280 papers. Most of its results hold *given a further local assumption* — around 130 of them. Those are real work and they are honestly labelled in the main repository, but they are not on this list, because this list answers a narrower question: what follows from the starting assumptions alone.
 
 Also absent: results that are measured rather than derived, and results that are true but amount to arithmetic on units.
 
-## The one thing a reader should know up front
-
-Six of the sixteen pass through the same step: ED's emergent metric, whose lapse rests on a band-accounting premise that is argued rather than closed. If that premise fails, those six fall together. They are marked on every page that carries them and in the [Results index](Results/README.md).
-
-## Where this comes from
-
-Assembled 2026-09-11 from the `ED Generative` repository and its claims ledger, `ED_ItemizedTheory_TieredClaims_v2.xlsx`. That repository remains the canonical source; this one is the readable subset.
