@@ -5,6 +5,13 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it. Each can be checked from the paper itself.
+>
+> - **The metric is fixed only to first order.** With $g_{00} = -b$ and $g_{ij} = b^{-1}\delta_{ij}$ the paper gets PPN $\gamma = 1$, the factor of two in light bending, at first order. That part is correct, given P-Commitment-Linear.
+> - **Perihelion precession (§5.4) is not supported.** Precession needs the second-order term in $g_{00}$ (PPN $\beta$). In the isotropic form the paper uses (§1.4, §3, §6), $b = 1 - r_s/r$ gives $g_{00} = -1 + 2U$ with no $U^2$ term, so $\beta = 0$. That predicts $4/3$ of GR's precession and a large Nordtvedt effect, both excluded by observation. §5.3 switches to the Schwarzschild (areal-radius) form, which does give GR, but in that form the angular metric is $r^2 d\Omega^2$, not $b^{-1} r^2 d\Omega^2$, and nothing in the paper supplies that. The two forms agree only at the order where the paper's claim of equivalence (§1.4) holds.
+> - **$g_{00}\,g_{rr} = -1$ depends on coordinates.** It holds for Schwarzschild in areal coordinates, not in isotropic ones. It is not a coordinate-free signature of "the Einstein branch".
+> - **The ray-tracing simulation (§6) checks arithmetic.** It confirms that $\ln b^{-1} = 2\ln b^{-1/2}$ on an imposed profile. It is not independent evidence about ED.
+
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
 1. **The 13 substrate primitives are not derived** (position paper, Paper_087).

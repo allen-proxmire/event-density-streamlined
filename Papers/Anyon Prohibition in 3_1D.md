@@ -4,6 +4,11 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **This is the Leinaas–Myrheim (1977) result.** P06 postulates three spatial dimensions, so ED assumes the one input the theorem needs.
+> - **"Bosons and fermions exhaust the options" holds only for one-dimensional (scalar-phase) representations.** Topology does not exclude the higher-dimensional representations of $S_n$ (parastatistics).
+
 ## Preamble: What This Paper Does NOT Claim
 
 1. **The 13 primitives are not derived.** They are postulated per Paper_087.

@@ -1,11 +1,18 @@
-# The tightest preferred-frame test is passed exactly
+# The preferred-frame parameter α₂
 
-**The claim.** Theories with a preferred frame are usually killed by two numbers, α₁ and α₂, measured in the solar system and in pulsars. In ED, α₂ is exactly zero, for the same reason its two gravitational cones are both luminal.
+**The claim.** The paper claims ED's preferred-frame parameter α₂ is exactly zero, because both of its gravitational cones are at the speed of light.
 
-**Strength:** follows from the foundation, at exactly the standing of the khronon-speed result.
+**Strength:** Not established. The algebra is correct, but α₂ = 0 is the same equation as the khronon-speed condition, and that condition is itself not established.
 **Sector:** gravity. **Paper:** [GR-IV_Preferred Frame Safety_Quantum Coherence](../Papers/GR-IV_Preferred%20Frame%20Safety_Quantum%20Coherence.md). **Ledger row:** 71.
 
 ---
+
+## What review found
+
+- **The algebra is correct and was checked against the literature.** In khronometric gravity with β = 0, the α₂ numerator vanishes exactly when α = λ/(1+2λ). This is a true general statement: if both speeds are luminal, α₂ vanishes identically.
+- **That condition is c_s = c**, which is not established for ED (see [the speed of the extra gravitational mode](GRAV_04_Khronon_Speed.md)).
+- **The companion α₁ estimate is not established either.** GR-IV puts α₁ at about 10⁻⁹³ using the dimensional estimate λ_local ∼ ρ_event/ρ_Planck, which turns a constant coupling into a position-dependent field without changing the theory's action.
+- **Couplings that small create a strong-coupling problem.** Using the literature scaling √λ·M_P, a coupling of order 10⁻⁹³ puts the strong-coupling scale near 4×10⁻¹⁹ eV, so the theory would stop being perturbative at essentially every energy. The scaling is quoted, not re-derived.
 
 ## What it uses from the foundation
 
@@ -15,29 +22,28 @@ Nothing directly. It runs on two earlier ED results plus published formulas.
 
 | result | what it supplies | where that stands |
 |---|---|---|
-| gravity waves at c | one of the two luminal conditions | independent of the unbuilt rule coefficients, but sits on GR-I's metric and so on the band-accounting premise |
-| the khronon speed c_s = c | the other | leading order, with an uncomputed correction ε′; also rests on the band-accounting premise |
+| gravitational-wave speed | c_T = c (β = 0) | assumed, not derived; sits on GR-I's metric and the band-accounting premise |
+| the khronon speed c_s = c | the tuning α = λ/(1+2λ) | not established; conflicts with the standard formula as argued in GR-III |
 
 ## What it borrows from standard physics
 
 | borrowed | why it is fair, and what it costs |
 |---|---|
-| the published preferred-frame formulas for this class of theory | standard results in the literature, and checked numerically in the paper |
+| the published preferred-frame formulas for this class of theory | standard results, checked in the paper |
 
 ## How it goes
 
-Put both cones at the speed of light. The published expression for α₂ then has a numerator that is algebraically the same equation as the scalar-luminal condition. It vanishes identically. So the tighter of the two preferred-frame bounds is met structurally rather than by tuning, and only α₁ carries any risk.
+Put both cones at the speed of light. The published expression for α₂ then has a numerator that is algebraically the scalar-luminal condition, so it vanishes.
 
 ## What this leans on, stated plainly
 
-- The paper flags this itself: the α₂ numerator and the luminal condition are **one equation, not two facts**. So α₂ = 0 carries exactly the standing of the khronon speed result and no more.
-- That standing is leading order. The uncomputed ε′ sets the size of any residual α₂.
-- A measured α₂ that is small and at the scale of ε′ would support this construction rather than break it. General relativity predicts exactly zero; ED predicts something of order ε′.
+- Both luminal conditions, neither derived for ED.
+- The uncomputed correction ε′ to the scalar speed.
 
 ## How it could be killed
 
-A measured α₂ large compared with the renormalization scale. A measured α₁ at or above about 10⁻⁵ in any environment would break the companion suppression argument.
+A measured α₂ well above the scale of ε′. But this is only meaningful once c_s = c is actually derived.
 
 ## What it is not
 
-Not an independent second success. It is the same causal-cone fact as the gravitational-wave speed, seen from another direction, and the paper says so.
+Not an independent success, and not a result about ED until the luminal conditions are derived. What stands is a correct statement about khronometric gravity in general.

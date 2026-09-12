@@ -5,6 +5,13 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **$T_H = \kappa/2\pi$ is the standard result.** $\kappa$ and the horizon location are borrowed from GR, and the periodicity is the standard Euclidean one. That V5 correlators carry the periodicity is asserted through DCGT, not shown.
+> - **The $(\omega/\omega_c)^2$ correction has no fixed content.** Its cutoff is chosen ($\omega_c = c/\ell_P$), its parity is postulated (P-V5-Even) and its coefficient is undetermined. For any black hole well above the Planck mass it is unobservably small.
+> - **Analogue experiments cannot test it (§6.4, §7, §8.1).** In an analogue horizon, deviations from thermality come from the medium's own dispersion at its own cutoff, a known effect since Unruh (1995). A Planck-scale substrate cutoff does not enter.
+> - **"Information-bearing" is not shown.**
+
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
 1. **The 13 substrate primitives are not derived** (Paper_087).

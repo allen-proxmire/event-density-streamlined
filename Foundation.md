@@ -8,6 +8,11 @@
 
 Everything else ED says has to trace back to this page.
 
+**Read this list with two facts in mind** (review, 2026-09-12):
+
+- **The list takes the measured numbers of physics as given:** G, ħ, Λ, H₀, the particle masses, the couplings, and the MOND scale a₀. A result that uses one of them cannot count as predicting it.
+- **The primitives are stated in words, not as a mathematical model.** Several cannot be evaluated as written; the canonical primitives paper says so of P12's Σ. That is why the results built on this list restate known physics rather than calculate new physics. See [Results](Results/README.md).
+
 *Sources: the 13 primitives are canonical `Paper_087`; the constants and the first 14 axioms are the 38 core-theory lines of `ED_ItemizedTheory_TieredClaims_v2.xlsx` (ED Generative); every other item was read in its own paper on 2026-09-11.*
 
 ---
@@ -94,7 +99,7 @@ These are not claims about what the world is made of. They are conditions the em
 | 23 | **Time stays different from space:** the emergent geometry always has one time direction and three space directions | 035 (C3) | a postulate |
 | 24 | **No negative-energy waves:** any added kind of wave carries positive energy (no "ghosts") | 035 (C4) | a postulate |
 | 25 | **Zoom out the right amount:** the blur is much bigger than the substrate's smallest scales and much smaller than the flow being described | 035 (C5) | a postulate |
-| 26 | **Horizons behave:** where there is a horizon, the links between inside and outside die off there | 035 (C6), 039 | 039 (May) takes the horizon's place from general relativity. GR-III (July) later showed the gravity rule builds a horizon by itself, with its size growing in step with the mass. The exact size, the 2 in 2GM/c², is still not pinned |
+| 26 | **Horizons behave:** where there is a horizon, the links between inside and outside die off there | 035 (C6), 039 | 039 (May) takes the horizon's place from general relativity. GR-III (July) has its linear gravity rule reach b = 0 on a surface whose size grows with the mass, but only because the solution is clipped at zero; that is not a strong-field result. The areal-coordinate Schwarzschild form the horizon results use is not derived (review, 2026-09-12) |
 
 ---
 

@@ -4,6 +4,11 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **This is Pauli's fundamental theorem.** The spacetime dimension is assumed by P06, and the Lorentzian signature is inherited from another paper.
+> - **"Cl(3,1) vs Cl(1,3) is a convention" (preamble 6, §3.7) is true only for complex representations.** As real algebras they are not isomorphic ($M_4(\mathbb R)$ against $M_2(\mathbb H)$), which matters for Majorana spinors. The complex uniqueness claim is unaffected.
+
 ## Preamble: What This Paper Does NOT Claim
 
 1. **The 13 primitives are not derived.** They are postulated per Paper_087.

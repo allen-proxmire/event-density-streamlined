@@ -1,15 +1,22 @@
-# Black-hole entropy: the coefficient 1/4
+# The black-hole entropy coefficient 1/4
 
-**The claim.** A black hole's entropy is a quarter of its horizon area in Planck units, S = A/4. ED produces the 1/4, not just the area law.
+**The claim.** The paper claims that ED produces the coefficient, not just the area law: a black hole's entropy is S = A/4 in Planck units, with both halves of the 1/4 coming from ED's own geometry.
 
-**Strength:** follows from the foundation, with two borrowed tools.
+**Strength:** Not established. The calculation is general relativity's own. It needs the exact Schwarzschild metric in areal coordinates and r_s = 2GM, and ED derives neither.
 **Sector:** black holes. **Paper:** [Thermal 2Pi_Entropy Coefficient](../Papers/Thermal%202Pi_Entropy%20Coefficient.md). **Ledger row:** 41.
 
 ---
 
+## What review found
+
+- **The algebra is correct, and it is the standard Gibbons–Hawking calculation:** continue to imaginary time, require no conical defect, read off T = κ/2π, integrate the first law.
+- **S = A/4 needs two things GR-I does not derive:** r_s = 2GM exactly, and A = 4πr_s². With r_s = kGM the first law gives S = A/(2k), so the 1/4 requires k = 2. That 2 comes from GR-I's identification b ∼ 1 + 2Φ, which matches the metric to Newtonian gravity; it is not derived. Together they are the Schwarzschild metric in areal-radius coordinates. GR-I builds its metric in isotropic form, g_ij = b⁻¹δ_ij. In that form the horizon area r²/b diverges at b = 0, and the second-order metric gives PPN β = 0, which observation excludes. The switch to the areal form is not justified.
+- **A statement on this page was wrong.** It said the exact horizon radius did not matter because a horizon forming at all "is all this derivation needs". The coefficient depends directly on that radius.
+- **Net:** ED reproduces GR's 1/4 by adopting GR's metric. It gives no independent derivation.
+
 ## What it uses from the foundation
 
-Nothing directly. It runs entirely on one earlier ED result, the shape of the horizon, which is itself built from the primitives.
+Nothing directly. It runs on one earlier ED result, the shape of the horizon.
 
 | | item | how it enters |
 |---|---|---|
@@ -19,32 +26,31 @@ Nothing directly. It runs entirely on one earlier ED result, the shape of the ho
 
 | result | what it supplies | where that stands |
 |---|---|---|
-| GR-III's vacuum profile | the horizon's shape, b(r) = 1 − r_s/r, and from its slope the surface gravity κ = 1/(2r_s) | built from the primitives, but through GR-I's lapse, which rests on the band-accounting premise (see "What this leans on") |
-| GR-I | the relation between the two metric parts, g₀₀g_rr = −1 | same chain |
+| GR-III's vacuum profile | the horizon's shape, b(r) = 1 − r_s/r, and from its slope the surface gravity κ = 1/(2r_s) | the linear rule clipped at b = 0; passes through GR-I's lapse, which rests on the band-accounting premise; the areal-coordinate reading is not derived |
+| GR-I | the relation g₀₀g_rr = −1 | holds in areal coordinates only, which GR-I does not establish (see its review note) |
 
 ## What it borrows from standard physics
 
 | borrowed | why it is fair, and what it costs |
 |---|---|
-| Euclidean continuation (turning time imaginary) | the same tool every derivation of the Hawking temperature uses, general relativity included. ED is level with GR here, not ahead of it |
-| the smoothness condition (no conical defect) | standard. It is what turns the geometry into a temperature |
+| Euclidean continuation (turning time imaginary) | the same tool every derivation of the Hawking temperature uses |
+| the smoothness condition (no conical defect) | standard; it turns the geometry into a temperature |
+| the Schwarzschild metric in areal coordinates | effectively borrowed: ED's metric matches it only after a change of coordinate form that GR-I does not justify |
 
 ## How it goes
 
-Near the horizon, ED's own profile takes the Rindler form: measure proper distance from the horizon and the metric becomes −κ²ρ²dt² + dρ². Turn time imaginary and this is a flat plane in polar coordinates, with κτ as the angle. A plane is smooth at its centre only if the angle runs a full turn, 2π. So imaginary time has period 2π/κ, which is a temperature T = κ/(2π). Feed that into the first law and integrate: S = πr_s² = A/4.
-
-Both halves of the 1/4 come from ED's own geometry: the 1/2 from the profile's slope, the 2π from the angle of one turn around the horizon.
+Near the horizon, the profile takes the Rindler form: measure proper distance from the horizon and the metric becomes −κ²ρ²dt² + dρ². Turn time imaginary and this is a flat plane in polar coordinates, with κτ as the angle. The plane is smooth at its centre only if the angle runs a full 2π. So imaginary time has period 2π/κ, which is a temperature T = κ/(2π). Feed that into the first law with M = r_s/2 and integrate: S = πr_s² = A/4.
 
 ## What this leans on, stated plainly
 
-- The horizon shape comes from GR-III, whose lapse comes from GR-I. GR-III closes GR-I's α = 1 assumption **only modulo a band-accounting premise**. If that premise fails, this result falls with the rest of the gravity block.
-- The exact horizon radius, the 2 in 2GM/c², is not pinned. The simulations show a horizon forms and its size grows in step with the mass, which is all this derivation needs.
-- The 2π is obtained with a reversible-time device in a theory whose defining primitive is an irreversible arrow. The paper flags a substrate-native, continuation-free route as the genuine open frontier (§4b).
+- The horizon shape comes from GR-III, whose lapse comes from GR-I, and that lapse rests on a band-accounting premise that is argued rather than closed.
+- The areal-coordinate form of the metric and r_s = 2GM, neither derived (see "What review found").
+- The 2π comes from a reversible-time device, used in a theory whose defining primitive is an irreversible arrow. The paper flags a continuation-free route as open, and its own attempt at one failed (§4b).
 
 ## How it could be killed
 
-A demonstration that the rule's strong-coupling behaviour does not form a finite-radius horizon, or that the near-horizon geometry is not Rindler, would take the 1/4 with it. (GR-III §11.4; Thermal2Pi §2, which reports the numerical check b/(κρ)² → 1.)
+A consistent derivation of ED's metric in a single coordinate form that is not Schwarzschild at second order would remove it. The isotropic form GR-I uses is already such a case.
 
 ## What it is not
 
-Not a derivation of the horizon's location from the substrate. Not a continuation-free derivation of the 2π. Not a claim to have gone beyond general relativity here: ED reads the 2π off the same near-horizon geometry GR does, and its addition is that the geometry itself is derived from the bandwidth rule rather than assumed.
+Not a derivation of the 1/4 independent of general relativity. Not a derivation of the horizon's location. Not a continuation-free derivation of the 2π.

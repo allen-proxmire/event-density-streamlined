@@ -16,6 +16,12 @@ Allen Proxmire
 
 > **Notation.** Here `κ` is **surface gravity**, `κ = 1/(2r_s)`. `Paper_GR-III` uses `κ` for a coupling of the dynamical rule (`κ/D = 8πG`). Same letter, unrelated objects, and GR-III is upstream of this paper.
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **This is the standard Gibbons–Hawking Euclidean calculation on the exact Schwarzschild metric.** The algebra is correct.
+> - **$S = A/4$ needs two things GR-I does not derive:** $r_s = 2GM$ exactly, and $A = 4\pi r_s^2$, i.e. the metric in areal-radius form. In the isotropic form GR-I actually uses, the area $r^2/b$ diverges at $b = 0$. So the 1/4 is not "derived from ED's own geometry". It is GR's 1/4, obtained by choosing the coordinate form in which ED's metric matches Schwarzschild.
+> - **The numerical check $b/(\kappa\rho)^2 \to 1$ is a Taylor expansion.**
+
 ## 1. The target and the prior status
 
 `S_BH = A/4`. The coefficient factors as `κ ×` (thermal relation): with `κ = 1/(2r_s)` and `T = κ/(2π)`, the first law `dM = T dS` integrates to `S = πr_s² = A/4`. ED *derives* `κ = ½ b′(r_s) = 1/(2r_s)` (GR-III). The open piece was the **2π** in `T = κ/(2π)`, previously read as inherited from standard horizon thermodynamics. This note shows ED's geometry supplies it.

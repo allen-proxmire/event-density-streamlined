@@ -7,6 +7,11 @@ Allen Proxmire
 
 > **Notation.** Here `κ` is **surface gravity** and `α` is a Rindler observer's **proper acceleration** (`ξ_R = c²/α`). `Paper_GR-III` uses `κ` for a dynamical-rule coupling; `Paper_GR-IV` uses `α` for the khronometric acceleration coupling and `α₁, α₂` for PPN parameters. Three distinct `α`s and two distinct `κ`s across papers that cite each other.
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **This is an identification, not a derivation.** The paper's own audit row 9 marks it as a position. Every number in it is standard physics.
+> - **The acoustic case has no testable content.** An acoustic horizon is a property of a fluid's flow at scales far above the substrate scale, so calling it "the same substrate object" predicts nothing.
+
 ## Preamble — What This Paper Does NOT Claim
 
 1. This paper does **not** claim derivation of the four-horizon structural unification (BH / Rindler / cosmological / acoustic) from nothing. Result is conditional on the 13 ED primitives (Paper_087) + declared paper-specific postulates (SCBU, V5-saturation mechanism).

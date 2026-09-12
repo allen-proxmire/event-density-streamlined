@@ -7,6 +7,11 @@ Allen Proxmire
 
 > ⚠ **Correction (2026-07-06, propagated 2026-09-04).** Where this paper cites $\Theta_{\mathrm{ED}}$ as primitive-level or P12-grounded content, that attribution is **incorrect**. Canonical `Paper_087` **P12** is the chain-level stability functional $\Sigma_C = \mathrm{Coh}-\mathrm{Str}-\mathrm{Grad}$, **unrelated to an event-density threshold**. $\Theta_{\mathrm{ED}}$ originates in `Paper_ED_CCC_ConformalCyclicCosmology` §§3.2/3.7 as a structural analogy and **was never checked against `Paper_087` before propagating downstream**. **The tier is unchanged** — $\Theta_{\mathrm{ED}}$ remains **substrate-parameter INHERITED** throughout, and no result here moves — what is corrected is the *primitive citation*. Full finding: `../../../event-density/docs/Scoping_ThetaED_FirstPrinciples_2026-07-06.md`; flagged in `Cosmology_TieredClaims_Ledger.md` staleness #3, recorded 2026-07-29 and unpropagated until now.
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **By its own audit (§4), this paper has zero derived steps.** Every equation is standard slow-roll inflation, and every number is Planck/BICEP data. The ED content is the naming: fluctuations as "sub-leading Ψ-fluctuations", tensor modes as "saddle-Hessian-signature fluctuations".
+> - **F1 and F2 cannot be applied from this repository.** They depend on Route A4 and $\Theta_{\rm ED}$ scalings that are defined in papers not included here.
+
 ## Preamble — What This Paper Does NOT Claim
 
 1. This paper does **not** claim closed-proof derivation of standard inflationary-perturbation-theory machinery (Mukhanov-Sasaki equation; quantum-field-theory mode quantization on de Sitter background; slow-roll parameter formalism) from substrate primitives. Standard inflationary perturbation theory is **INHERITED** via DCGT continuum bridge; ED supplies the substrate-graph reading of *what underlies the de Sitter background* (Cos_01 saturation regime) and *how substrate-parameter content enters via Route A4*.

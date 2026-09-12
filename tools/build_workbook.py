@@ -119,6 +119,7 @@ for p in sorted(glob.glob("Results/*.md")):
     m = re.search(r"\*\*Sector:\*\*\s*(.+?)\.\s*\*\*Paper:\*\*\s*\[([^\]]+)\]\([^)]*\)\.\s*\*\*Ledger row:\*\*\s*(\d+)", head)
     RES.append(dict(page=os.path.basename(p), title=title, claim=claim, strength=strength,
                     sector=m.group(1), paper=m.group(2), row=int(m.group(3)),
+                    review=bullets(sec.get("What review found", "")),
                     uses=table(sec.get("What it uses from the foundation", "")),
                     prior=table(sec.get("What it uses from earlier ED results", "")),
                     borrow=table(sec.get("What it borrows from standard physics", "")),
@@ -130,7 +131,7 @@ for p in sorted(glob.glob("Results/*.md")):
 def expand(tok):
     tok = clean(tok)
     out = []
-    if tok in ("\u2014", "-", ""):
+    if tok in ("—", "-", ""):
         return out
     out += re.findall(r"\bP\d{2}\b", tok)
     out += ["A" + m for m in re.findall(r"axiom (\d+)", tok, re.I)]
@@ -192,12 +193,13 @@ for r in sorted(RES, key=lambda x: x["row"]):
     rdata.append((r["title"], r["sector"], r["claim"], r["strength"], r["row"], r["paper"],
                   ", ".join(clean(u[0]) for u in r["uses"]) or "none directly",
                   "; ".join(clean(b[0]) for b in r["borrow"]) or "none",
-                  " | ".join(r["leans"]), r["kill"], r["isnot"], r["page"], chain))
-sheet("Results", ["Result", "Sector", "Claim", "Strength", "Ledger row", "Source paper",
+                  " | ".join(r["leans"]), r["kill"], r["isnot"], r["page"], chain,
+                  " | ".join(r["review"])))
+sheet("Results", ["Result", "Sector", "What the paper claims", "Verdict (review 2026-09-12)", "Ledger row", "Source paper",
                   "Foundation items used", "Borrowed from standard physics",
                   "What it leans on", "How it could be killed", "What it is not", "Paper",
-                  "On the gravity chain"],
-      [34, 16, 60, 40, 9, 34, 26, 40, 70, 60, 50, 30, 12], rdata, wrapcols=(1, 3, 4, 6, 7, 8, 9, 10, 11))
+                  "On the gravity chain", "What review found"],
+      [34, 16, 60, 50, 9, 34, 26, 40, 70, 60, 50, 30, 12, 90], rdata, wrapcols=(1, 3, 4, 6, 7, 8, 9, 10, 11, 14))
 
 udata = []
 for r in sorted(RES, key=lambda x: x["row"]):
@@ -211,7 +213,7 @@ for r in sorted(RES, key=lambda x: x["row"]):
             udata.append((r["title"], r["row"], k, f[1] if f else "?",
                           (f[3] or f[4][:60]) if f else "", clean(u[2]) if len(u) > 2 else ""))
     if not seen:
-        udata.append((r["title"], r["row"], "\u2014", "none directly", "runs on earlier ED results", ""))
+        udata.append((r["title"], r["row"], "—", "none directly", "runs on earlier ED results", ""))
 sheet("Uses Map", ["Result", "Ledger row", "Item key", "Kind", "Item", "How it enters"],
       [34, 9, 10, 12, 44, 60], udata, wrapcols=(1, 5, 6))
 
@@ -256,7 +258,13 @@ lines = [("Foundation", ""),
          ("Using V5 (axiom 14)", '=COUNTIF(' + UM + '!$C:$C,"A14")'),
          ("Using V1 (axiom 21)", '=COUNTIF(' + UM + '!$C:$C,"A21")'),
          ("Using a working condition", '=COUNTIF(' + UM + '!$D:$D,"Condition")'),
-         ("Sectors of physics", '=SUMPRODUCT((Results!$B$2:$B$17<>"")/COUNTIF(Results!$B$2:$B$17,Results!$B$2:$B$17&""))')]
+         ("Sectors of physics", '=SUMPRODUCT((Results!$B$2:$B$17<>"")/COUNTIF(Results!$B$2:$B$17,Results!$B$2:$B$17&""))'),
+         ("", ""),
+         ("Review verdicts (2026-09-12)", ""),
+         ("Textbook result, restated", '=COUNTIF(Results!$D:$D,"Textbook result*")'),
+         ("Modest ED-specific result", '=COUNTIF(Results!$D:$D,"Modest*")'),
+         ("Identification, not a derivation", '=COUNTIF(Results!$D:$D,"Identification*")'),
+         ("Not established", '=COUNTIF(Results!$D:$D,"Not established*")')]
 r = 3
 for lab, f in lines:
     c = ws.cell(r, 1, lab)
@@ -271,7 +279,7 @@ ws["D3"] = "Live counts, recalculated from the Foundation, Results, Uses Map and
 ws["D3"].font = Font(name=ARIAL, size=10, italic=True)
 ws["D3"].alignment = WRAP
 
-NOT = [("Grounded", 132, "Holds given a further local assumption that is not on the foundation page. Real work, honestly labelled, but outside this list."),
+NOT = [("Grounded", 132, "Holds given a further local assumption that is not on the foundation page. Outside this list."),
        ("Postulated", 59, "A declared assumption belonging to one paper."),
        ("Open", 51, "Named as unresolved."),
        ("Selected/Inherited", 40, "Taken from published physics."),
@@ -280,39 +288,39 @@ NOT = [("Grounded", 132, "Holds given a further local assumption that is not on 
        ("Asserted", 22, "Stated without a supporting argument in the paper."),
        ("Measured", 14, "Measured in the simulator, including row 92 (zero signalling), retiered from Derived on 2026-09-11."),
        ("Primitive", 13, "The primitives themselves; they are on the Foundation tab."),
-       ("Derived", 9, "Nine in the ledger, eight of them on this list. Row 42 (the c-power in G) is excluded as unit arithmetic."),
+       ("Derived", 9, "Nine in the ledger, eight of them on this list. Row 42 (the c-power in G) is excluded as unit arithmetic. Review of 2026-09-12: none of the eight holds as a derivation of new content; see the Results tab."),
        ("Constant", 9, "The constants; they are on the Foundation tab."),
-       ("D-via-I / Form-forced", 8, "All eight are on this list.")]
+       ("D-via-I / Form-forced", 8, "All eight are on this list. Review of 2026-09-12: these are mostly known results restated; see the Results tab.")]
 sheet("Not On This List", ["Ledger tier", "Count", "Why it is not on this list"], [26, 8, 100], NOT, wrapcols=(3,))
 
 ws = wb.create_sheet("Read Me", 0)
 ws.column_dimensions["A"].width = 118
-txt = [("Event Density \u2014 the streamlined theory", "t"),
+txt = [("Event Density — an honest account", "t"),
        ("", ""),
        ("What this workbook is", "h"),
-       ("The part of Event Density that can be backed, in one file. Two halves: the 53 items ED starts from, and the 16 results that follow from them with nothing hidden added.", "b"),
-       ("Built 2026-09-11 from Foundation.md and the sixteen result pages in this folder. Those documents are the source; this workbook is generated from them.", "b"),
-       ("", ""),
-       ("The tabs", "h"),
-       ("Foundation \u2014 all 53 counted items plus the 3 uncounted definitions. Kind, name, plain statement, source paper.", "b"),
-       ("Results \u2014 the 16, one row each. Claim, strength, what it uses, what it borrows, what it leans on, how to kill it.", "b"),
-       ("Uses Map \u2014 one row per result-and-item pair. Filter by item key to see everything that uses a given assumption.", "b"),
-       ("Dependencies \u2014 which results stand on earlier ED results, and where those stand.", "b"),
-       ("Papers \u2014 the 14 result papers and the 4 upstream papers.", "b"),
-       ("Counts \u2014 live counts, recalculated from the other tabs.", "b"),
-       ("Not On This List \u2014 what was left out, and why.", "b"),
-       ("", ""),
-       ("The rule", "h"),
-       ("Everything here traces back to the Foundation tab. A result that needs an assumption not on that page does not belong on this list, however good the result is.", "b"),
+       ("The core of Event Density in one file: the 53 items ED starts from, and the 16 results whose papers use nothing beyond them, each with a review verdict.", "b"),
+       ("Generated from Foundation.md and the sixteen result pages in this folder. Those documents are the source.", "b"),
        ("", ""),
        ("The one thing to know up front", "h"),
-       ("Six of the sixteen pass through the same step: the emergent metric, whose lapse rests on a band-accounting premise that is argued rather than closed. If that premise fails, those six fall together. They are marked on the Dependencies tab.", "b"),
+       ("On review (2026-09-12), none of the sixteen derives anything not already known. Six are textbook results restated in ED terms, one is a modest ED-specific result, four are identifications without calculation, and five (all in the gravity block) rest on steps that do not hold as written. ED is an interpretive framework, not yet a theory that can be calculated from.", "b"),
        ("", ""),
-       ("What the strength words mean", "h"),
-       ("Follows from the foundation means the result needs nothing beyond the 53 items and standard mathematics. Where a result also borrows a tool or a value from published physics, the Results tab names it, so the borrowing is not hidden inside the word derived.", "b"),
+       ("The tabs", "h"),
+       ("Foundation — all 53 counted items plus the 3 uncounted definitions.", "b"),
+       ("Results — the 16, one row each: what the paper claims, the review verdict, what review found, what it uses, borrows and leans on, how to kill it.", "b"),
+       ("Uses Map — one row per result-and-item pair. Filter by item key to see everything that uses a given assumption.", "b"),
+       ("Dependencies — which results stand on earlier ED results, and where those stand.", "b"),
+       ("Papers — the 14 result papers and the 4 upstream papers. Each paper file opens with a review note that takes precedence over its text.", "b"),
+       ("Counts — live counts, including the review verdicts.", "b"),
+       ("Not On This List — what was left out, and why.", "b"),
+       ("", ""),
+       ("What the verdicts mean", "h"),
+       ("Textbook result, restated: correct, but known physics or mathematics, with ED supplying vocabulary. Modest ED-specific result: a correct statement about an ED model with limited physical reach. Identification: a known phenomenon said to be a substrate object, with nothing calculated. Not established: relies on a step that does not hold as written.", "b"),
+       ("", ""),
+       ("The rule", "h"),
+       ("A result appears here only if its paper uses nothing beyond the Foundation tab. Passing the rule means no hidden assumptions; it does not make a result a derivation.", "b"),
        ("", ""),
        ("Source of record", "h"),
-       ("The canonical corpus is the ED Generative repository and its claims ledger, ED_ItemizedTheory_TieredClaims_v2.xlsx. Ledger row numbers on the Results tab point into that ledger.", "b")]
+       ("The canonical corpus is the ED Generative repository and its claims ledger, ED_ItemizedTheory_TieredClaims_v2.xlsx. Ledger row numbers on the Results tab point into that ledger. The ledger's tiers predate this review.", "b")]
 r = 1
 for s, k in txt:
     c = ws.cell(r, 1, s)

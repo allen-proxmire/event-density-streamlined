@@ -4,6 +4,13 @@ Allen Proxmire
 
 
 ---
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **The integer winding is $\pi_1(U(1)) = \mathbb Z$.** For a single-valued phase it is exact by construction, so "confirmed to machine precision" could not have come out otherwise.
+> - **Loop independence is the ordinary vortex winding of an XY / lattice U(1) model.** Calling it an "integral Gauss law" is an analogy. Gauss's law relates a field's flux to enclosed charge, and here there is no field, as §5 says.
+> - **"Protected by the arrow" is an interpretation, not a separate result.**
+> - **§5 is a genuine, honestly reported negative:** a determined $1/r^2$ field appears only when ED's own invariants are dropped.
+
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
 1. **The 13 substrate primitives are not derived** (position paper, Paper_087).

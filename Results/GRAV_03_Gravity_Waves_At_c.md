@@ -1,38 +1,44 @@
-# Gravitational waves travel at the speed of light
+# Gravitational-wave speed
 
-**The claim.** Gravitational waves and light share one speed, because they share one substrate and one transport. The 2017 neutron-star observation, which killed a long list of gravity theories, is an identity in ED rather than a constraint it has to satisfy.
+**The claim.** The paper claims gravitational waves and light share one speed because they share one substrate and one transport, so the 2017 neutron-star observation is an identity in ED rather than a constraint.
 
-**Strength:** follows from the foundation, independent of the unbuilt parts of the rule.
+**Strength:** Not established. The wave equation with speed c is written in by hand, and ED builds no dynamics for gravitational waves. Nature satisfies c_T = c, and ED is consistent with it by assumption.
 **Sector:** gravity. **Paper:** [GR-II_ED Gravity is Khronometric Class](../Papers/GR-II_ED%20Gravity%20is%20Khronometric%20Class.md). **Ledger row:** 68.
 
 ---
+
+## What review found
+
+- **"One substrate, one cone" only sets a maximum speed.** It limits how fast any signal can travel. It does not show that gravitational perturbations exist as waves, or that they travel at that maximum.
+- **The wave equation is assumed.** GR-III's propagating sector writes ḧ_ij = c²∇²h_ij directly. The rule GR-III actually builds is diffusive (ω = −iDk²), with no wave speed at all.
+- **The observation is real (GW170817). ED's derivation of it is missing.**
 
 ## What it uses from the foundation
 
 | | item | how it enters |
 |---|---|---|
 | P05 | polarity transport | one transport mechanism, therefore one limiting speed |
-| axiom 21 | the V1 kernel's shape | fixes the finite width that sets the speed limit |
+| axiom 21 | the V1 kernel's shape | the finite width that sets the speed limit |
 
 ## What it uses from earlier ED results
 
 | result | what it supplies | where that stands |
 |---|---|---|
-| GR-I's emergent metric | the geometry the waves move in | rests on the band-accounting premise |
+| GR-I's emergent metric | the geometry the waves move in | first order only; rests on the band-accounting premise |
 
 ## How it goes
 
-There is one substrate and one transport mechanism, so there is one causal cone. Every massless sector saturates that same cone. Light and gravitational waves are both massless sectors. So their speeds are equal, not by tuning but by construction. The same argument says any Lorentz violation is universal, shared by all species, rather than differential between them, which is what the tightest experimental bounds actually test.
+There is one substrate and one transport mechanism, hence one causal cone. The paper then asserts that every massless sector, gravitational waves included, travels on that cone.
 
 ## What this leans on, stated plainly
 
-- This does not depend on the unbuilt coefficients of the dynamical rule. The paper marks it independent of that residual, which makes it one of the sturdier gravity results.
-- It still sits on GR-I's metric, so it shares the gravity block's exposure to the band-accounting premise.
+- The existence of tensor waves travelling at the limiting speed, which is assumed.
+- The same argument implies that any Lorentz violation would affect all species equally. That holds only as far as the assumption does.
 
 ## How it could be killed
 
-A measured difference between the tensor gravitational-wave speed and the speed of light beyond observational bounds. Or observation of Lorentz violation that differs between matter species at leading order, which would break the single-cone structure.
+A measured difference between the speed of gravitational waves and the speed of light, which would also contradict general relativity.
 
 ## What it is not
 
-Not a new prediction. The observation is already in hand. The claim is that ED gets it for structural reasons rather than by choosing a parameter.
+Not a new prediction, and not a derivation. ED is consistent with c_T = c by construction of its assumptions.

@@ -4,6 +4,11 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **The argument is circular.** The 1/2 enters through the Taylor expansion of $E = \sqrt{p^2c^2 + m^2c^4}$, which the paper inherits (audit row 8). The "Galilean Jacobian" steps (§3.4, §3.6) restate $E = p^2/2m$; they do not produce the factor independently.
+> - **§3.1's claim is asserted.** That adjacency and propagation content are "orthogonal" and underlie $[\hat x, \hat p] = i\hbar$ is not shown.
+
 ## Preamble — What This Paper Does NOT Claim
 
 1. This paper does **not** claim derivation of the adjacency-bandwidth boost-asymmetry from nothing. Result is conditional on the 13 ED primitives (Paper_087) + declared paper-specific postulates.

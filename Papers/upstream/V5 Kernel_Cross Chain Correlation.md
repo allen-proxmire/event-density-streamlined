@@ -5,6 +5,13 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These notes come from a review of this repository.
+>
+> - **V5's existence is postulated** (Foundation axiom 14).
+> - **The "unification" has no predictive content.** The envelope shape and the memory time are free in each regime, so the kernel fits any exponential relaxation.
+> - **Polymer molecules are not substrate "chains".** Treating them as such conflates substrate-scale objects with macroscopic ones.
+> - **The DCGT limits in §6 are stated, not derived.** That includes Maxwell relaxation, QFT regulators and the Lieb–Robinson bound.
+
 ## Abstract
 
 The Event Density (ED) substrate is a 13-primitive generative system whose downstream content includes a hierarchy of kernel rule-types. The first such kernel, **V1**, is the substrate's single-chain vacuum-response kernel (finite-width per Theorem N1, Paper #18; retarded-support per Theorem T18, Paper #093). This paper introduces and characterizes the second kernel rule-type: **V5**, the **cross-chain correlation kernel**. Given the postulated primitives P02, P04, P05, P07, P09, P10, P11, together with V1's finite-width retarded structure, V5 is characterized as the substrate kernel rule-type that mediates *correlation between distinct chains* with finite memory time $\tau_{V5}$, forward-causal support, and $U(1)$-gauge-compatible transport.

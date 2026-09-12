@@ -5,6 +5,11 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These notes come from a review of this repository.
+>
+> - **"Theorem N1" and "Theorem T18" are informal arguments, not proofs.** The kernel's shape is postulated (Foundation axiom 21), and T18 rests on P-NoBackwardChain, which is argued by inspection.
+> - **This paper conflicts with GR-II on Lorentz invariance.** It claims a Lorentz-covariant kernel and no Lorentz violation, while GR-II asserts a preferred foliation and universal Lorentz violation. The two are not reconciled.
+
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
 1. The substrate primitives are not derived; they are postulated (see Paper_087).

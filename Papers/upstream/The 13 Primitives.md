@@ -5,6 +5,12 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These notes come from a review of this repository.
+>
+> - **The primitives are prose; they do not define a model anything can be calculated from.** The paper's own P12 note says $\Sigma_C$ "cannot be evaluated" from this section, and `Grad` has no derived definition.
+> - **"Cross-domain reach" (§3.3, §5.4) is weaker evidence than it sounds.** It consists of identifications with physics that was already known, made after the fact. That is not a prediction in the usual sense.
+> - **The Newton and Einstein comparison has a limit.** Their postulates were mathematically definite. This is why the downstream results in this repository are mostly restatements.
+
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
 1. **The 13 primitives are not derived.** They are postulated within the Event Density Generative Substrate Ontology. This paper does not attempt to derive them from a deeper structural layer.

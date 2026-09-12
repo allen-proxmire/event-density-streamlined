@@ -4,6 +4,14 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **The "decoupling surface" is a relabeling.** It is placed at the GR horizon (§3.2, as the paper says), and $\Gamma_{\rm cross} \to 0$ there is asserted, not computed.
+> - **The Planck-mass remnant (§6.3) is dimensional analysis.** Any cutoff at the Planck frequency gives a Planck-mass endpoint. $M_\star = \hbar/(c\ell_P) = M_P$ and $G = c^3\ell_P^2/\hbar$ are identities once $\ell_P$ is defined from $G$; they constrain nothing. That the remnant is stable is asserted. §6.3 also uses both $\kappa = c^4/(4GM)$ and a "$1/(8\pi)$" factor for the same quantity.
+> - **"The information paradox is not generated" (§7) is asserted, not shown.**
+> - **§6.7's claim that ED explains galactic dynamics without dark matter is not supported here.** It relies on MOND-sector papers outside this repository.
+> - **Analogue experiments cannot test the substrate cutoff** (see the review note on Hawking Spectrum).
+
 ## Abstract
 
 The Event Density (ED) substrate is a 13-primitive generative system. This paper develops three connected results in the black-hole / Hawking sector as **downstream structural consequences** of the postulated primitives:

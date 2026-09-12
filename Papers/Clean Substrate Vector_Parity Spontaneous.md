@@ -5,6 +5,13 @@ Allen Proxmire
 
 ---
 
+> **Review note (2026-09-12).** The text below is the corpus copy, unchanged. These corrections come from a review of this repository and take precedence over it.
+>
+> - **The §4 theorem is correct.** As §4 itself says, it is the statement that a parity-symmetric model carries no parity-odd invariant, applied to this commitment-map model.
+> - **§3's "N = 1 is forced vector, matching electromagnetism" misidentifies the abelian factor.** The Standard Model's fundamental abelian gauge factor is hypercharge $U(1)_Y$, and hypercharge is chiral: left- and right-handed fermions carry different hypercharge. Unbroken electromagnetism is vector, but it is not the fundamental abelian factor. So this capability claim is in tension with observed physics.
+> - **§5's pseudoreality of $SU(2)$ is speculation.** It is not an established explanation of why the weak force is chiral.
+> - **§7's prediction has no stated way to measure it.** The claim that handedness is spontaneous and correlated with the matter/antimatter sign comes with no method for testing it.
+
 ## Preamble: What This Paper Does NOT Claim *(written first per QC discipline; abstract reconciled against this)*
 
 1. **This paper does not derive the weak force's chirality.** *Which* force couples to one handedness (the "casting") is found to be a **representation-theoretic fact, inherited, not derived.** The paper strengthens the parity wall and grounds its operator; it does not breach it. The verdict remains: parity violation is inherited.
