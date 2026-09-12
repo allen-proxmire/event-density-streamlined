@@ -1,8 +1,8 @@
-# Event Density — just the facts
+# Event Density — just the derivations
 
-Event Density is a research program that tries to build physics out of a discrete substrate whose one special feature is that becoming is an irreversible commitment. This folder is not the program. It is the part of the program that can be backed, written so that someone outside it can check the work.
+Event Density is a research program that builds physics from a relational, discrete substrate whose one special feature is that time is one-way. Becoming is an irreversible commitment. This folder is not the entire program. The core theory can be found here, and the immediate derivations. 
 
-It holds four things.
+The repository holds four things.
 
 **[Foundation.md](Foundation.md)** — the 53 items ED starts from: 49 assumptions and 4 arguments, plus 3 definitions that are names rather than claims. Every item was read in the paper that declares it. Nothing on the list is derived from anything else on the list.
 
@@ -14,7 +14,7 @@ It holds four things.
 
 ## The rule
 
-Everything here traces back to Foundation.md. A result that needs an assumption not on that page does not belong on this list, however good the result is.
+Everything here traces back to Foundation.md and the 53 assumptions. A result that needs another assumption not on that page does not belong on this list, however good the result is. There are many results like this, with the need for an additional assumption, but they do not appear here. 
 
 ## What is deliberately absent
 
