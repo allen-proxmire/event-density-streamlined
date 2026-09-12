@@ -2,7 +2,7 @@
 
 Event Density is a research program that tries to build physics out of a discrete substrate whose one special feature is that becoming is an irreversible commitment. This folder is not the program. It is the part of the program that can be backed, written so that someone outside it can check the work.
 
-It holds three things.
+It holds four things.
 
 **[Foundation.md](Foundation.md)** — the 53 items ED starts from: 49 assumptions and 4 arguments, plus 3 definitions that are names rather than claims. Every item was read in the paper that declares it. Nothing on the list is derived from anything else on the list.
 
