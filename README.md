@@ -31,4 +31,4 @@ The result is about transport. It does not construct relativistic fermions, and 
 
 ## Source
 
-The result comes from *The Clean Substrate Is Vector* (Allen Proxmire, 2026), included here as [The_Clean_Substrate_Is_Vector.md](The_Clean_Substrate_Is_Vector.md). [Result.md](Result.md) states only the part of that paper the result needs, and the review note at the top of the paper takes precedence over its text.
+The full account is [Paper.md](Paper.md), *Reflection-Symmetric Transport Carries No Handedness* (Allen Proxmire, 2026). It is standalone: every assumption, the proof, the controls, the numerical check, the limits, and the full list of ED's thirteen primitives. [Result.md](Result.md) and [Assumptions.md](Assumptions.md) are short versions of it.
