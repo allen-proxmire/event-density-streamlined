@@ -31,4 +31,4 @@ The result is about transport. It does not construct relativistic fermions, and 
 
 ## Source
 
-The result comes from *The Clean Substrate Is Vector* (Allen Proxmire, 2026). The paper is in the [ED Generative](https://github.com/allen-proxmire/ED-generative) repository at `physics-papers/substrate-evaluation/Paper_CleanSubstrateVector_ParitySpontaneous.md`. This repository states only the part of that paper the result needs.
+The result comes from *The Clean Substrate Is Vector* (Allen Proxmire, 2026), included here as [The_Clean_Substrate_Is_Vector.md](The_Clean_Substrate_Is_Vector.md). [Result.md](Result.md) states only the part of that paper the result needs, and the review note at the top of the paper takes precedence over its text.

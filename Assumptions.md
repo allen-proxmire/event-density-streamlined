@@ -4,7 +4,7 @@ Everything [the result](Result.md) assumes, and nothing else.
 
 ## From ED's primitives
 
-The primitives are stated canonically in `Paper_087` of the ED Generative corpus. The result uses five of the thirteen.
+ED's substrate has thirteen primitives. The result uses five of them.
 
 | | primitive | what it supplies |
 |---|---|---|
