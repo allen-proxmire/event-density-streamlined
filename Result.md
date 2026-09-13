@@ -47,4 +47,4 @@ The script checks the theorem for N = 1 to 6. Part 1 uses nearest-neighbour hops
 
 - **This model only.** The result is about the transport model in M1–M3. That ED's substrate transport has this form is assumed, not derived. It does not depend on how far hops reach or on which matrix represents the reflection.
 - **One dimension, transport only.** It does not construct relativistic fermions (a Dirac sector). It does not say whether nature's handedness arose this way, or which force is handed.
-- **Modest in mathematical terms.** It is the principle that a reflection-symmetric system carries no reflection-odd invariant, made explicit for this family, and very likely a special case of the known symmetry classification of non-Hermitian systems.
+- **Modest in mathematical terms.** It is the principle that a reflection-symmetric system carries no reflection-odd invariant, made explicit for this family. A closely related statement, for a mirror symmetry combined with a transpose, is published (K. Kawabata, M. Sato and K. Shiozaki, *Physical Review B* 102, 205118, 2020). The exact form here may well be known too.

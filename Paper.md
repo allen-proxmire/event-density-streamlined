@@ -23,7 +23,7 @@ The answer depends on two facts about ED:
 
 The first fact rules handedness out of the laws. The second makes handedness possible at all. The result below makes both statements precise for a definite model of transport, and proves the first in full generality within that model.
 
-Mathematically the result is modest. It is the principle that a reflection-symmetric system carries no reflection-odd invariant, worked out explicitly for this family of transport maps. It is very likely a special case of the symmetry classification of non-Hermitian systems [3]. What makes it specific to ED is where the symmetry comes from (ED's primitive list) and why the question is worth asking (ED's arrow).
+Mathematically the result is modest. It is the principle that a reflection-symmetric system carries no reflection-odd invariant, worked out explicitly for this family of transport maps. A closely related statement is published: a mirror symmetry combined with a transpose removes the first-order skin effect, which in one dimension occurs exactly when the winding is nonzero [4]. What makes it specific to ED is where the symmetry comes from (ED's primitive list) and why the question is worth asking (ED's arrow).
 
 Section 2 states every assumption. Section 3 states and proves the theorem. Section 4 gives the controls, Section 5 the numerical check, Section 6 the consequence for ED, and Section 7 the limits.
 
@@ -212,7 +212,7 @@ This is the familiar pattern of a ferromagnet. Its laws treat every direction al
 - **Transport only.** The result does not construct relativistic fermions, and it does not say whether nature's handedness arose this way or which force in nature is handed.
 - **One dimension.** The chain is one-dimensional. How a reflection constrains handedness on a grid of two or more dimensions is not addressed here.
 - **A negative result about the rules.** It shows that ED's rules cannot contain a handedness in this model. It does not show that ED's substrate does break the symmetry, or how it would.
-- **Mathematically modest.** It is the principle that a reflection-symmetric system carries no reflection-odd invariant, made explicit for this family, and very likely a special case of the known classification [3].
+- **Mathematically modest.** It is the principle that a reflection-symmetric system carries no reflection-odd invariant, made explicit for this family. A closely related statement, for a mirror symmetry combined with a transpose, is published [4]. The exact form here was not found in a short literature search, and it may well be known.
 
 ### Could it have come out wrong?
 
@@ -255,3 +255,5 @@ None of these distinguishes a direction in space from its mirror image. P11 dist
 [2] Z. Gong, Y. Ashida, K. Kawabata, K. Takasan, S. Higashikawa and M. Ueda, "Topological phases of non-Hermitian systems," *Physical Review X* **8**, 031079 (2018).
 
 [3] K. Kawabata, K. Shiozaki, M. Ueda and M. Sato, "Symmetry and topology in non-Hermitian physics," *Physical Review X* **9**, 041015 (2019).
+
+[4] K. Kawabata, M. Sato and K. Shiozaki, "Higher-order non-Hermitian skin effect," *Physical Review B* **102**, 205118 (2020).

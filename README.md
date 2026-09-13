@@ -34,7 +34,7 @@ The same holds for hops that reach any number of sites, H(k) = Σ_{m=−R}^{R} e
 
 ## How far it reaches
 
-The result is modest. It is the general principle that a mirror-symmetric system can't carry a mirror-odd quantity, made explicit for this model and shown for every number of channels. It is very likely a special case of the known symmetry classification of non-Hermitian systems. It is about this model of transport only. It does not say how nature's handedness arose, or which force in nature is handed.
+The result is modest. It is the general principle that a mirror-symmetric system can't carry a mirror-odd quantity, made explicit for this model and shown for every number of channels. A closely related statement is already published, for a mirror symmetry combined with a transpose, so the exact form here may well be known too. It is about this model of transport only. It does not say how nature's handedness arose, or which force in nature is handed.
 
 ## Check it yourself
 
@@ -49,3 +49,9 @@ The script (needs numpy) tests the result for 1 to 6 channels, for random mirror
 - [Paper.md](Paper.md): the full proof, every assumption, the controls and the limits.
 - [Result.md](Result.md): the statement and proof on one page.
 - [Assumptions.md](Assumptions.md): everything the result assumes.
+
+## References
+
+- H. B. Nielsen and M. Ninomiya, "A no-go theorem for regularizing chiral fermions," *Physics Letters B* 105, 219 (1981).
+- K. Kawabata, M. Sato and K. Shiozaki, "Higher-order non-Hermitian skin effect," *Physical Review B* 102, 205118 (2020).
+- The references for the winding number and the Hatano–Nelson model are in [Paper.md](Paper.md).
