@@ -1,34 +1,49 @@
-# Event Density — one result
+# Event Density: one result
 
-Event Density (ED) builds physics from a discrete substrate whose defining feature is that time runs one way: commitment is irreversible. This repository holds one result of that program, and only what the result needs.
+Event Density (ED) is an attempt to describe the world as a discrete substrate in which time runs one way: once something happens, it can't be undone. This repository holds one result about that kind of world, and only what the result needs.
 
-## The result
+**The result: a world whose rules look the same in a mirror can't have handedness written into those rules. If it has a handedness, the handedness was chosen by the state the world is in.**
 
-**In ED's substrate, handedness cannot be written into the rules. If the transport between channels carries a net handedness, that handedness came from a broken symmetry.**
+## The idea in plain words
 
-More precisely, write the transport of N channels along a chain as H(k) = e^{ik}A + e^{−ik}B, where A is the forward hop and B the backward hop. **If the rules are symmetric under reflection, the winding number of det H(k) is zero for every N and every forward hop A.** That winding number is the measure of net handedness. A nonzero winding is possible in this family, but only when the reflection symmetry is broken.
+Picture a highway with several lanes. Traffic hops forward or backward from one stretch of road to the next, and at each hop it can also switch lanes in some pattern. That pattern of hops is the *transport*.
 
-- [Result.md](Result.md) — the statement, the proof and what it does and does not reach.
-- [Assumptions.md](Assumptions.md) — everything the result assumes.
-- `python tools/check_result.py` — a numerical check of the theorem (needs numpy).
+Now ask whether the traffic has a built-in twist: a preference for spiralling one way rather than the other. A number called the *winding number* measures that twist. Zero means no net preference.
 
-## What it takes
+The result says that **if the rules for hopping look the same in a mirror, the twist is exactly zero**, for any number of lanes and any hopping pattern. A mirror flips forward and backward and flips the lanes left to right. If the rules survive that flip, every bit of twist one way is matched by the same amount the other way, and they cancel.
 
-- **Five ED primitives:** indexed, homogeneous space (P03); transport between neighbouring loci (P05); distinct channels (P07); a U(1) phase (P09); irreversible commitment (P11).
-- **One definition:** amplitudes add and scale.
-- **The fact that no ED primitive is a reflection.**
-- **Three modelling assumptions:** the form of the transport map, how reflection acts on it, and the measure of handedness.
+Two things give the result its content:
+
+- **Twist is only possible because time runs one way.** If hopping forward and hopping backward were perfect time-mirrors of each other, the twist would be zero no matter what. The irreversibility is what opens the door.
+- **Twist really does appear when the mirror symmetry is broken.** Traffic that only ever hops forward twists once per lane.
+
+Put together: **one-way time makes handedness possible, and mirror-symmetric rules keep it out of the laws.** So if an ED world has a handedness, it wasn't written into the rules. It was picked by the state, the way a magnet picks a direction that its laws don't prefer.
+
+This is a "you can't get there from here" result, a kind that has a long history of guiding physics. The Nielsen–Ninomiya theorem, which says you can't simply put handed particles on a regular lattice, is similar in spirit and shaped decades of work. This result is far smaller, but it is the same kind of thing: a guardrail that says where handedness has to come from.
+
+## Precisely
+
+Write the transport of N lanes (channels) as H(k) = e^{ik}A + e^{−ik}B, where A is the forward hop, B the backward hop, and k the wavenumber. If the transport is symmetric under reflection, the winding number of det H(k) is zero for every N and every A.
+
+## What it assumes
+
+- **From ED:** space is uniform, phases are carried between neighbouring points, channels are distinct objects, the phase is a complex number, and time runs one way. None of ED's rules is a mirror reflection.
+- **Modelling choices:** the form of H(k) above, how a reflection acts on it, and the winding number as the measure of handedness.
 
 ## How far it reaches
 
-The result is modest. It is the general principle that a reflection-symmetric system cannot carry a reflection-odd invariant, made explicit for this family of transport maps and shown for every number of channels.
+The result is modest. It is the general principle that a mirror-symmetric system can't carry a mirror-odd quantity, made explicit for this model and shown for every number of channels. It is about this model of transport only. It does not say how nature's handedness arose, or which force in nature is handed.
 
-What makes it specific to ED is where the two ingredients come from:
-- **The symmetry:** ED's rules supply it, because none of them is a reflection.
-- **A question worth asking:** ED's arrow makes the transport non-Hermitian. Without the arrow, a handed transport would not be possible at all.
+## Check it yourself
 
-The result is about transport. It does not construct relativistic fermions, and it does not say which force in nature is handed.
+```
+python tools/check_result.py
+```
 
-## Source
+The script (needs numpy) tests the result for 1 to 6 channels, along with the two cases above: forward-only traffic, and traffic without one-way time.
 
-The full account is [Paper.md](Paper.md), *Reflection-Symmetric Transport Carries No Handedness* (Allen Proxmire, 2026). It is standalone: every assumption, the proof, the controls, the numerical check, the limits, and the full list of ED's thirteen primitives. [Result.md](Result.md) and [Assumptions.md](Assumptions.md) are short versions of it.
+## Files
+
+- [Paper.md](Paper.md): the full proof, every assumption, the controls and the limits.
+- [Result.md](Result.md): the statement and proof on one page.
+- [Assumptions.md](Assumptions.md): everything the result assumes.
