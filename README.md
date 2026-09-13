@@ -25,6 +25,8 @@ This is a "you can't get there from here" result. The best-known result of that 
 
 Write the transport of N lanes (channels) as H(k) = e^{ik}A + e^{−ik}B, where A is the forward hop, B the backward hop, and k the wavenumber. If the transport is symmetric under reflection, the winding number of det H(k) is zero for every N and every A.
 
+The same holds for hops that reach any number of sites, H(k) = Σ_{m=−R}^{R} e^{imk} C_m, and for any way a mirror can act on the lanes (any matrix S with S² = 1).
+
 ## What it assumes
 
 - **From ED:** space is uniform, phases are carried between neighbouring points, channels are distinct objects, the phase is a complex number, and time runs one way. None of ED's rules is a mirror reflection.
@@ -40,7 +42,7 @@ The result is modest. It is the general principle that a mirror-symmetric system
 python tools/check_result.py
 ```
 
-The script (needs numpy) tests the result for 1 to 6 channels, along with the two cases above: forward-only traffic, and traffic without one-way time.
+The script (needs numpy) tests the result for 1 to 6 channels, for random mirrors and for hops reaching up to three sites. It also runs the two cases above: forward-only traffic, and traffic without one-way time.
 
 ## Files
 
