@@ -8,18 +8,18 @@ Event Density (ED) is an attempt to describe the world as a discrete substrate i
 
 Picture a highway with several lanes. Traffic hops forward or backward from one stretch of road to the next, and at each hop it can also switch lanes in some pattern. That pattern of hops is the *transport*.
 
-Now ask whether the traffic has a built-in twist: a preference for spiralling one way rather than the other. A number called the *winding number* measures that twist. Zero means no net preference.
+Now ask whether the traffic has a preferred direction: on balance, does it flow more one way along the road than the other? That left–right preference is what *handedness* means here. A number called the *winding number* measures it, and zero means no net preference. On a road that loops back on itself, a preference shows up as a steady drift. On a road with ends, it shows up as traffic piling up at one end.
 
-The result says that **if the rules for hopping look the same in a mirror, the twist is exactly zero**, for any number of lanes and any hopping pattern. A mirror flips forward and backward and flips the lanes left to right. If the rules survive that flip, every bit of twist one way is matched by the same amount the other way, and they cancel.
+The result says that **if the rules for hopping look the same in a mirror, the preference is exactly zero**, for any number of lanes and any hopping pattern. A mirror swaps forward with backward and flips the lanes left to right. If the rules survive that flip, every bit of preference one way is matched by the same amount the other way, and they cancel.
 
 Two things give the result its content:
 
-- **Twist is only possible because time runs one way.** If hopping forward and hopping backward were perfect time-mirrors of each other, the twist would be zero no matter what. The irreversibility is what opens the door.
-- **Twist really does appear when the mirror symmetry is broken.** Traffic that only ever hops forward twists once per lane.
+- **A preferred direction is only possible because time runs one way.** If hopping forward and hopping backward were perfect time-mirrors of each other, the preference would be zero no matter what. The irreversibility is what opens the door.
+- **A preferred direction really does appear when the mirror symmetry is broken.** For traffic that only ever hops forward, the winding number equals the number of lanes.
 
 Put together: **one-way time makes handedness possible, and mirror-symmetric rules keep it out of the laws.** So if an ED world has a handedness, it wasn't written into the rules. It was picked by the state, the way a magnet picks a direction that its laws don't prefer.
 
-This is a "you can't get there from here" result, a kind that has a long history of guiding physics. The Nielsen–Ninomiya theorem, which says you can't simply put handed particles on a regular lattice, is similar in spirit and shaped decades of work. This result is far smaller, but it is the same kind of thing: a guardrail that says where handedness has to come from.
+This is a "you can't get there from here" result. The best-known result of that kind about handedness is the Nielsen–Ninomiya theorem: on a regular lattice with local, reversible hopping, left-handed and right-handed particles always come in equal numbers. The two are relatives, not the same. Nielsen–Ninomiya forbids a net handedness even without mirror symmetry, but only for reversible hopping. This result allows irreversible hopping, which can escape that kind of zero, and shows that mirror-symmetric rules still force it. It is far smaller, but it is the same kind of guardrail: it says where handedness has to come from.
 
 ## Precisely
 
@@ -32,7 +32,7 @@ Write the transport of N lanes (channels) as H(k) = e^{ik}A + e^{−ik}B, where 
 
 ## How far it reaches
 
-The result is modest. It is the general principle that a mirror-symmetric system can't carry a mirror-odd quantity, made explicit for this model and shown for every number of channels. It is about this model of transport only. It does not say how nature's handedness arose, or which force in nature is handed.
+The result is modest. It is the general principle that a mirror-symmetric system can't carry a mirror-odd quantity, made explicit for this model and shown for every number of channels. It is very likely a special case of the known symmetry classification of non-Hermitian systems. It is about this model of transport only. It does not say how nature's handedness arose, or which force in nature is handed.
 
 ## Check it yourself
 
