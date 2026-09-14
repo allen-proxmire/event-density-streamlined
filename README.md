@@ -1,57 +1,84 @@
-# Event Density: one result
+# Event Density
 
-Event Density (ED) is an attempt to describe the world as a discrete substrate in which time runs one way: once something happens, it can't be undone. This repository holds one result about that kind of world, and only what the result needs.
+**Event Density (ED)** is a way of picturing how the world works underneath. It starts from one simple conviction: **time only runs one way.** Once something has really happened, it can't be undone.
 
-**The result: a world whose rules look the same in a mirror can't have handedness written into those rules. If it has a handedness, the handedness was chosen by the state the world is in.**
+This repository holds ED's one proved result and the full record of a first attempt to turn the picture into working rules and test them.
 
-## The idea in plain words
+## The idea
 
-Picture a highway with several lanes. Traffic hops forward or backward from one stretch of road to the next, and at each hop it can also switch lanes in some pattern. That pattern of hops is the *transport*.
+In ED:
 
-Now ask whether the traffic has a preferred direction: on balance, does it flow more one way along the road than the other? That left–right preference is what *handedness* means here. A number called the *winding number* measures it, and zero means no net preference. On a road that loops back on itself, a preference shows up as a steady drift. On a road with ends, it shows up as traffic piling up at one end.
+- **The world is a web of places,** called *loci*. The web keeps growing: new places keep being born.
+- **Things spread across the web like ripples,** trying out many paths at once.
+- **When a ripple meets something already settled,** it leaves a mark. Once that mark can't be brought back, something definite has happened. ED calls this a *commitment*, and the moment it becomes final a *draw*.
+- **Commitments use up a kind of budget,** so near a lot of settled matter, clocks and motion slow down.
 
-The result says that **if the rules for hopping look the same in a mirror, the preference is exactly zero**, for any number of lanes and any hopping pattern. A mirror swaps forward with backward and flips the lanes left to right. If the rules survive that flip, every bit of preference one way is matched by the same amount the other way, and they cancel.
+That's the whole picture. Everything else is working out what it implies.
 
-Two things give the result its content:
+## What it gets right
 
-- **A preferred direction is only possible because time runs one way.** If hopping forward and hopping backward were perfect time-mirrors of each other, the preference would be zero no matter what. The irreversibility is what opens the door.
-- **A preferred direction really does appear when the mirror symmetry is broken.** For traffic that only ever hops forward, the winding number equals the number of lanes.
+The picture was turned into an exact set of rules that a computer can run, and then checked against what's already known.
 
-Put together: **one-way time makes handedness possible, and mirror-symmetric rules keep it out of the laws.** So if an ED world has a handedness, it wasn't written into the rules. It was picked by the state, the way a magnet picks a direction that its laws don't prefer.
+- **Quantum behavior.** The rules reproduce the strange things quantum experiments show: waves that interfere with themselves, interference that fades when you learn which path was taken, and comes back when that information is erased. They also never let a signal go faster than light.
+- **Gravity.** With the budget set up the right way, the rules match Einstein's general relativity: how light bends near the Sun, how Mercury's orbit shifts, how the Moon moves.
+- **The expanding universe.** New places being born at a steady rate gives the steady push that makes the universe's expansion speed up, matching astronomers' measurements.
 
-This is a "you can't get there from here" result. The best-known result of that kind about handedness is the Nielsen–Ninomiya theorem: on a regular lattice with local, reversible hopping, left-handed and right-handed particles always come in equal numbers. The two are relatives, not the same. Nielsen–Ninomiya forbids a net handedness even without mirror symmetry, but only for reversible hopping. This result allows irreversible hopping, which can escape that kind of zero, and shows that mirror-symmetric rules still force it. It is far smaller, but it is the same kind of guardrail: it says where handedness has to come from.
+**Matching known physics is a requirement, not a discovery.** Each match was reached by adjusting the rules to fit what's already measured.
 
-## Precisely
+## The one result
 
-Write the transport of N lanes (channels) as H(k) = e^{ik}A + e^{−ik}B, where A is the forward hop, B the backward hop, and k the wavenumber. If the transport is symmetric under reflection, the winding number of det H(k) is zero for every N and every A.
+**Handedness** means a built-in preference for left or right. The laws of nature have one: one of the fundamental forces treats left and right differently.
 
-The same holds for hops that reach any number of sites, H(k) = Σ_{m=−R}^{R} e^{imk} C_m, and for any way a mirror can act on the lanes (any matrix S with S² = 1).
+Picture a highway with several lanes. Traffic hops forward or backward along the road, switching lanes as it goes. Does it drift more one way than the other? ED proved a small theorem about that:
 
-## What it assumes
+- **If the rules look the same in a mirror,** the drift is exactly zero. Every bit of preference one way is matched the other way. So handedness can't be written into mirror-symmetric rules. If a world has a handedness, the state of the world picked it, the way a magnet picks a direction its laws don't prefer.
+- **Handedness is only possible at all because time runs one way.** If hopping forward and back were perfect mirror images in time, there could be no preference whatever the rules.
 
-- **From ED:** space is uniform, phases are carried between neighbouring points, channels are distinct objects, the phase is a complex number, and time runs one way. None of ED's rules is a mirror reflection.
-- **Modelling choices:** the form of H(k) above, how a reflection acts on it, and the winding number as the measure of handedness.
+The theorem is correct, and a script here checks it. Its mathematics is simple, and something close to it is already known.
 
-## How far it reaches
+## What didn't work
 
-The result is modest. It is the general principle that a mirror-symmetric system can't carry a mirror-odd quantity, made explicit for this model and shown for every number of channels. A closely related statement is already published, for a mirror symmetry combined with a transpose, so the exact form here may well be known too. It is about this model of transport only. It does not say how nature's handedness arose, or which force in nature is handed.
+A lot, and every failure is written down.
 
-## Check it yourself
+- **Dark energy.** ED's own distinctive versions (births that fluctuate, or births tied to the edge of the visible universe) were ruled out or disfavored by real astronomical data. What fits is the ordinary constant version.
+- **Gravity.** Every simpler version of the budget failed a real measurement, and each fix just made ED more like Einstein's theory.
+- **Space.** ED couldn't explain why space has three dimensions. That has to be put in by hand.
+- **Handedness in ED's own rules.** ED's rules *can* settle into a handed state picked by chance, but only if three extra ingredients are added by hand. Three careful attempts to make ED supply the key ingredient itself all failed.
+
+## Where it stands
+
+- **ED is an interpretation:** a consistent, runnable way of picturing the world that agrees with known physics.
+- **It isn't a new theory** that tells us something about nature we didn't already know.
+- **Its lasting contributions:**
+  - the handedness theorem;
+  - a clear, physical account of what makes a measurement final;
+  - an unusually complete record of what doesn't work, and why.
+
+## How the work was done
+
+- **Tests set up in advance.** Each test was specified before it was run, so results couldn't be quietly reinterpreted afterwards.
+- **Every failure recorded,** including mistakes in the test code itself.
+- **Literature first.** Before claiming anything, published physics was checked to see whether someone had already done it.
+- **Tuned settings labeled.** Any setting chosen just to make something work is marked as tuned.
+- **An exit rule agreed ahead of time.** "If three honest attempts fail, stop and write it up." That's why the write-up exists.
+
+## What's in this repository
+
+| | |
+|---|---|
+| **The theorem** | [Result.md](Result.md) (one page), [Paper.md](Paper.md) (full proof and limits), [Assumptions.md](Assumptions.md) (what it assumes), [tools/check_result.py](tools/check_result.py) (checks it) |
+| **The first attempt** | [ED_Attempt_01](ED_Attempt_01/README.md): the rules, every test, the running record of claims and decisions, and the write-up |
+| **Start reading here** | [Plain-language version](ED_Attempt_01/06_Write_Up/ED_Plain_Language.md), [definitions of the terms](ED_Attempt_01/06_Write_Up/Definitions.md), [full write-up](ED_Attempt_01/06_Write_Up/ED_Interpretation_Draft2.md) |
+
+## Check the theorem yourself
 
 ```
 python tools/check_result.py
 ```
 
-The script (needs numpy) tests the result for 1 to 6 channels, for random mirrors and for hops reaching up to three sites. It also runs the two cases above: forward-only traffic, and traffic without one-way time.
+This needs Python with numpy. It tests the theorem for up to six lanes, for random mirrors, and for hops reaching several places at once. It also runs the two edge cases: traffic that only hops forward, and traffic without one-way time.
 
-## Files
+## Further reading
 
-- [Paper.md](Paper.md): the full proof, every assumption, the controls and the limits.
-- [Result.md](Result.md): the statement and proof on one page.
-- [Assumptions.md](Assumptions.md): everything the result assumes.
-
-## References
-
-- H. B. Nielsen and M. Ninomiya, "A no-go theorem for regularizing chiral fermions," *Physics Letters B* 105, 219 (1981).
-- K. Kawabata, M. Sato and K. Shiozaki, "Higher-order non-Hermitian skin effect," *Physical Review B* 102, 205118 (2020).
-- The references for the winding number and the Hatano–Nelson model are in [Paper.md](Paper.md).
+- H. B. Nielsen and M. Ninomiya, "A no-go theorem for regularizing chiral fermions," *Physics Letters B* 105, 219 (1981). The best-known result of this kind about handedness.
+- The full reference list is in [Paper.md](Paper.md).
